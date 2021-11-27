@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $data = json_decode(file_get_contents("php://input"));
 //$data = json_decode($_POST);
-//var_dump($data);
 $title = $data->title;
 $author = $data->author;
 $price = $data->price;
